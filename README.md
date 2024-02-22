@@ -9,9 +9,5 @@
         Complex Numeros reales y numeros imaginarios Ejemplo 3 + j, 6 + 2j
     - String
         Una coleccion de uno o mas caracteres se denota con un ´´ o "". Si un String consta de mas de una frase se usan comillas triples ´´´
-
-        'Asabeneh'
-'Finland'
-'Python'
-'I love teaching'
-'I hope you are enjoying the first day of 30DaysOfPython Challenge'
+        "Tecnar"
+        'Python'
