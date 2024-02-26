@@ -8,8 +8,8 @@ class Person:
 
   def Obtenerinfo(self):
     #Uso de f-string
-    #return f'{self.firstname} {self.lastname} tiene {self.age} años de edad y vive en {self.city}, {self.country}'
+    return f'{self.firstname} {self.lastname} tiene {self.age} años de edad y vive en {self.city}, {self.country}'
     #Uso de print anidado"
-    print("Mi nombre es", self.firstname, self.lastname,"tengo",self.age, "años de edad y vivo en", self.city, self.country)
+    #print("Mi nombre es", self.firstname, self.lastname,"tengo",self.age, "años de edad y vivo en", self.city, self.country)
 
 
