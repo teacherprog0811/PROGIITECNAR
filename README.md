@@ -8,15 +8,15 @@
 | 02  |  [Clase 1 Tipos de datos](./Clase1/01.md)|
 | 03  |  [Clase 2 Clases y Funciones](./Clase2/02.md)|
 | 04  |  [Clase 3 Herencia](./Clase3/03.md)|
-| 05  |  [Clase 4 Polimorfismo](./Clase4/04.md)|
+| 05  |  [Clase 4 Condicionales](./Clase4/04.md)|
 | 06  |  [Clase 5 Ciclos](./Clase5/05.md)|
-| 07  |  [Vectores](./Clase6/06.md)|
-| 08  |  [Matrices](./Clase7/07.md)|
-| 09  |  [Creando nuestra primera aplicacion grafica](./Clase8/08.md)|
-| 10  |  [Almacenando datos en archivos planos](./Clase9/09.md)|
-| 11  |  [Leyendo datos desde archivos planos](./Clase10/10.md)|
-| 12  |  [Creando aplicacion con conexion a DB](./Clase11/11.md)|
-| 13  |  [Aplicacion CRUD](./Clase12/12.md)|
+| 07  |  [Clase 6 Vectores](./Clase6/06.md)|
+| 08  |  [Clase 7 Matrices](./Clase7/07.md)|
+| 09  |  [Clase 8 Creando App grafica](./Clase8/08.md)|
+| 10  |  [Clase 9 App para manipulacion de archivos planos](./Clase9/09.md)|
+| 11  |  [Clase 10 App grafica con conexion a Mysql](./Clase10/10.md)|
+| 12  |  [Clase 11 App CRUD (Listar, Agregar,Actualizar y Eliminar)](./Clase11/11.md)|
+| 13  |  [Clase 12 Generar Ejecutable de nuestra App](./Clase12/12.md)|
 
 
 ## Introduccion

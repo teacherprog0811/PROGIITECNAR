@@ -8,6 +8,6 @@ class Person:
 
 class Student(Person):
   pass
-
+#pass Declaracion nula
 x = Student("Ivan", "Narvaez")
 x.printname()
