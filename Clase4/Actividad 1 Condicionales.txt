@@ -1,0 +1,8 @@
+Imprimir en pantalla un menu de 5 opciones 
+1. Personas
+2. Vehiculos
+3. Universidades
+4. Notas
+5. Salir
+
+El usuario debe seleccionar una de las opciones y al presionar el numero este debe enviar un mensaje "Hola has presionado la opcion {nombredelaopcion}" al presionar salir el programa debe finalizar.
