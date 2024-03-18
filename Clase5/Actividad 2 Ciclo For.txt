@@ -1,0 +1,10 @@
+Crear un diccionario de tipo Vuelo con los siguientes key y value
+
+Aerolinea: Avianca
+Vuelo: AV3102
+Origen: CTG
+Destino: MDE
+Tipo_Maleta: ['Cabina', 'Mano', 'Bodega']
+
+Imprimir en pantalla los valores  del diccionario.
+Imprimir en pantalla los valores de tipo de maleta.
