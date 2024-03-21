@@ -1,12 +1,12 @@
 1. Declarar una lista vacía
 2. Declarar una lista con más de 5 elementos
-3. Encuentre la longitud de su lista
-4. Obtener el primer elemento, el elemento central y el último elemento de la lista
-5. Declara una lista llamada tipos_datos_mezclados, pon tu(nombre, edad, altura, estado civil, dirección)
-6. Declare una variable de lista llamada it_companies y asígnele los valores iniciales Facebook, Google, Microsoft, Apple, IBM, Oracle y Amazon.
-7. Añadir una empresa de TI a it_companies utilizando los metodos de insercion.
+3. Encuentre la longitud de las dos listas creadas anteriormente.
+4. Obtener el primer elemento, el elemento central y el último elemento de la lista.
+5. Crear una lista llamada Datos_personales que contenga (nombre, edad, altura, estado civil, dirección), y agrega datos utilizando la funcion append().
+6. Crea una lista llamada it_companies y asígnele los valores iniciales Facebook, Google, Microsoft, Apple, IBM, Oracle y Amazon.
+7. Añadir una empresa  a la lista it_companies utilizando la funcion insert().
 8. Comprobar si una determinada empresa existe en la lista it_companies.
 9. Ordena la lista con el método sort()
 10. Invierte la lista en orden descendente utilizando el método reverse()
-11. Elimine la primera empresa informática de la lista.
-12. Eliminar todas las empresas de TI de la lista
+11. Elimine la primera empresa informática de la lista utilizando el metodo pop y delete.
+12. Eliminar todas las empresas de la lista it_companies
