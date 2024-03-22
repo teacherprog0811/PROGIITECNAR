@@ -20,7 +20,7 @@ El cuerpo es la secuencia de instrucciones que se ejecutan al invocarlo, puede i
 ● Cualquier tipo de instrucción o bloque de instrucciones: asignación, condicional,
 bucle, e incluso, llamadas o invocaciones a otros métodos.
 
-[Declaracion de metodos JAVA](../images/declaracion_metodos_java.png)
+![Declaracion de metodos JAVA](../images/declaracion_metodos_java.png)
 
 ### Funciones sin parametros
 
