@@ -37,61 +37,6 @@ Un tipo de datos booleano es un valor Verdadero o Falso. T y F siempre deben est
     False 
 ```
 
-#### List
-
-La lista de Python es una colección ordenada que permite almacenar elementos de diferentes tipos de datos. Una lista es similar a una matriz en JavaScript.
-
-**Ejemplo:**
-
-```py
-[0, 1, 2, 3, 4, 5]  # todos son los mismos tipos de datos: una lista de números
-['Fresa', 'Naranja', 'Mango', 'Pera'] # todos los mismos tipos de datos: una lista de cadenas (frutas)
-['Fresa', 10, False, 9.81] # diferentes tipos de datos en la lista: cadena, entero, booleano y flotante
-```
-
-#### Dictionary
-
-Un objeto de diccionario de Python es una colección desordenada de datos en un formato de par clave-valor.
-
-**Ejemplo:**
-
-```py
-{
-'nombre':'Ivan',
-'apellido':'Narvaez',
-'pais':'Colombia', 
-'edad':34, 
-'Fortalezas':['JS', 'React', 'Node', 'AWS', 'Azure', 'Devops']
-}
-```
-
-#### Tuple
-
-
-Una tupla es una colección ordenada de diferentes tipos de datos, como una lista, pero las tuplas no se pueden modificar una vez creadas. Son inmutables.
-
-**Ejemplo:**
-
-```py
-('Ivan', 'Dario', 'Sandra', 'Jonathan', 'Clara') # Nombres
-```
-
-```py
-('Colombia', 'Peru', 'Argentina', 'Ecuador', 'Venezuela', 'Bolivia', 'Chile', 'Paraguay') # Paises
-```
-
-#### Set
-
-
-Un conjunto es una colección de tipos de datos similar a una lista y una tupla. A diferencia de la lista y la tupla, set no es una colección ordenada de elementos. Al igual que en Matemáticas, la configuración en Python solo almacena elementos únicos.
-
-**Ejemplo:**
-
-```py
-{2, 4, 3, 5}
-{3.14, 9.81, 2.7} # el orden no es importante definirlo
-```
-
 ### Verificando Tipos de datos
 
 Para verificar el tipo de datos de ciertos datos/variables utilizamos la función **tipo**. En la siguiente terminal verá diferentes tipos de datos de Python:

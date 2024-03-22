@@ -43,4 +43,4 @@ Para comprobar si python está instalado escriba el siguiente comando en el term
 ```shell
 python --version
 ```
-
+##### El contenido de este repositorio esta basado en la fuente: [Asabeneh S. Yetayeh](https://github.com/Asabeneh/30-Days-Of-Python)
