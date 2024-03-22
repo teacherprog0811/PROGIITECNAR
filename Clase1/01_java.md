@@ -11,7 +11,7 @@ En JAVA existen varios tipos de tipos de datos. Comencemos con los más comunes.
 - Float: Float admite 4 bits Decimal number
 - Double: Double admite 8 bits Decimal number
 
-![Checkeando tipos de datos](./images/variables_numericas_java.png)
+![Checkeando tipos de datos](../images/variables_numericas_java.png)
 
 #### Cadena
 
