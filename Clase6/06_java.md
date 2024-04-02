@@ -125,7 +125,8 @@ ArrayList<Integer> arrList = new ArrayList<Integer>();
         arrList.add(0, 1);
         arrList.add(1, 2);
         arrList.add(2, 3);
- System.out.println("Imprimiendo primer elemento" +arrList.getFirst()); // Imprimira en pantalla el numero 1
+ System.out.println("Imprimiendo primer elemento GET " +arrList.get(0)); // Imprimir primer elemento con GET
+ System.out.println("Imprimiendo primer elemento" +arrList.getFirst()); // Imprimir primer elemento con getFirst
 ```
 
 ### Obtener el ultimo elemento de un ArrayList
@@ -137,7 +138,8 @@ ArrayList<Integer> arrList = new ArrayList<Integer>();
         arrList.add(0, 1);
         arrList.add(1, 2);
         arrList.add(2, 3);
-System.out.println("Imprimiendo ultimo elemento" +arrList.getLast()); // Imprimira en pantalla el numero 3
+System.out.println("Imprimiendo primer elemento GET " +arrList.get(2)); // Imprimir el ultimo elemento con GET
+System.out.println("Imprimiendo ultimo elemento" +arrList.getLast()); // Imprimir ultimo elemento con getLast
 ```
 
 ### Obtener el tamaño de un Arraylist
