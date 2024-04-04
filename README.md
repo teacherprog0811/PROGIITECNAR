@@ -10,7 +10,7 @@
 | 04  |  [Clase 3 Herencia](./Clase3/03.md)|
 | 05  |  [Clase 4 Condicionales](./Clase4/04.md)|
 | 06  |  [Clase 5 Ciclos](./Clase5/05.md)|
-| 07  |  [Clase 6 Vectores](./Clase6/06.md)|
+| 07  |  [Clase 6 Vectores](./Clase6/06_list_python.md)|
 | 08  |  [Clase 7 Matrices](./Clase7/07.md)|
 | 09  |  [Clase 8 Creando App grafica](./Clase8/08.md)|
 | 10  |  [Clase 9 App para manipulacion de archivos planos](./Clase9/09.md)|
