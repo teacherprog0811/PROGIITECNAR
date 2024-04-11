@@ -43,6 +43,12 @@ public class Diccionarios {
         String nombre = persona2.get("nombre");
         
         System.out.println("Obteniendo valor del key nombre: " +nombre);
+
+        //Actualizando un elemento del diccionario
+        
+        String nombreactualizado = persona2.put("Nombre", "Dario");
+        
+        System.out.println("Diccionario actualizado por el key nombre: " +nombreactualizado);
         
         //Eliminando un elemento del diccionario
         
