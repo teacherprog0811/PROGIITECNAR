@@ -8,8 +8,8 @@ class FormularioMaestroDesign(tk.Tk):
 
     def __init__(self):
         super().__init__()
-        self.logo = util_img.leer_imagen("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\App_Prueba\imagenes\logo.png", (560, 136))
-        self.perfil = util_img.leer_imagen("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\App_Prueba\imagenes\Perfil.png", (100, 100))
+        self.logo = util_img.leer_imagen("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\FinalApp\imagenes\logo.png", (560, 136))
+        self.perfil = util_img.leer_imagen("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\FinalApp\imagenes\Perfil.png", (100, 100))
         self.config_window()
         self.paneles()
         self.controles_barra_superior()        
@@ -19,7 +19,7 @@ class FormularioMaestroDesign(tk.Tk):
     def config_window(self):
         # Configuración inicial de la ventana
         self.title('.: UNITECNAR - APP :.')
-        self.iconbitmap("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\App_Prueba\imagenes\logo.ico")
+        self.iconbitmap("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\FinalApp\imagenes\logo.ico")
         w, h = 1024, 600        
         util_ventana.centrar_ventana(self, w, h)        
 
