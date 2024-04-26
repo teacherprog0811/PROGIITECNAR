@@ -1,7 +1,7 @@
-from tkinter import *
+import tkinter as tk 
 from PIL import Image, ImageTk # Requiere instalar Pillow 
 
-ventana = Tk()
+ventana = tk.Tk()
 #Agregando icono a la ventana
 path = Image.open("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\PrimeraApp\imagenes\icono.png")
 icono = ImageTk.PhotoImage(path)
