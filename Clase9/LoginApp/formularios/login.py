@@ -6,7 +6,6 @@ class Login(tk.Tk):
 
     def __init__(self):
         super().__init__()
-        #self.windows = tk.Tk()
         self.title("INGRESO AL SISTEMA")
         self.resizable(False, False)
         utl.centrar_ventana(self, 800, 500)
@@ -45,7 +44,7 @@ class Login(tk.Tk):
         if self.cusuario.get() == "admin" and self.cclave.get() == "1234":
                 self.destroy()
                 from formularios.PAdmin import PAdmin
-                PAdmin()
+                PAdmin().mainloop()
         else:
                 messagebox.showerror('Error',"Usuario / Contraseña errados",parent=self)
 
