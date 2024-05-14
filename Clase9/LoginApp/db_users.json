@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": 12345678,
+            "name": "Ivan Narvaez",
+            "username": "inarvaez",
+            "password": "123",
+            "email": "ivan.narvaez@unitecnar.edu.co",
+            "role": "Administrador"
+        },
+        {
+            "id": "1143338025",
+            "name": "Felix Lagares",
+            "username": "flagares",
+            "password": "123",
+            "email": "flagares@gmail.com",
+            "role": "Administrador"
+        }
+    ]
+}

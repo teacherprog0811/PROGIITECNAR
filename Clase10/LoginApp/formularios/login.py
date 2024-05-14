@@ -1,8 +1,9 @@
 import tkinter as tk
 import util.generic as utl
+import util.db as db
 from tkinter import messagebox
 import json
-
+import mysql.connector
 from formularios.PAdmin import PAdmin
 from formularios.PVentas import PVentas
 
@@ -43,23 +44,18 @@ class Login(tk.Tk):
         self.bregistrar.pack(fill=tk.X, padx=10, pady=10)
 
     def validar(self):
-        with open("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\db_users.json", "r", encoding='utf-8') as file:
-            db_users = json.load(file)
-        if self.cusuario.get()=="" and self.cclave.get() == "":
-            messagebox.showerror('Error',"Debes llenar los campos de Usuario / Contraseña",parent=self)
-            self.cusuario.focus()
-        else:     
-            for usuarios in db_users["users"]:
-                if self.cusuario.get() == usuarios["username"] and self.cclave.get() == usuarios["password"] and usuarios["role"] == "Administrador":
-                    self.destroy()
-                    PAdmin(usuarios["name"],usuarios["username"],usuarios["email"]).mainloop()
-                elif self.cusuario.get() == usuarios["username"] and self.cclave.get() == usuarios["password"] and usuarios["role"] == "Vendedor":
-                    self.destroy()
-                    PVentas(usuarios["name"],usuarios["username"],usuarios["email"]).mainloop()
         
-            messagebox.showerror('Error',"Usuario / Contraseña errados",parent=self)
-
-    
+        sql="select * from Usuarios where Username='%s' and Clave = '%s'" % (self.cusuario.get(),self.cclave.get())
+        db1 = db.Database()
+        usuariologeado = db1.select(sql)
+        if len(usuariologeado) == 0:
+            messagebox.showerror('Error',"Usuario y/o clave incorrectos",parent=self)
+        else:
+            self.destroy()
+            if usuariologeado[0][5] == "Administrador":
+                PAdmin(usuariologeado[0][1],usuariologeado[0][2],usuariologeado[0][4])
+            else:
+                PVentas(usuariologeado[0][1],usuariologeado[0][2],usuariologeado[0][3])
     
 
         

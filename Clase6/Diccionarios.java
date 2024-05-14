@@ -75,10 +75,6 @@ public class Diccionarios {
         
         System.out.println("Nuevo dict despues de limpiarlo: " +persona2);
         
-       
-        
-        
-        
         
     }
 }

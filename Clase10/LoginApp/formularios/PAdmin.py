@@ -1,7 +1,10 @@
 import tkinter as tk
 import json
-from tkinter import messagebox, ttk
+from tkinter import messagebox, ttk, PhotoImage
 import util.generic as utl
+import util.db as db
+
+
 class PAdmin(tk.Tk):
     def __init__(self, name="", username="", email=""):
         self.name = name
@@ -51,7 +54,7 @@ class PAdmin(tk.Tk):
         self.frame_user_info.pack(side=tk.LEFT, padx=4, pady=5,fill="y")
         texto=tk.Label(self.frame_user_info, text="PANEL ADMINISTRATIVO", font=('Times', 20))
         texto.pack(padx=20,pady=4)
-        usrimg = utl.leer_imagen(r"D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\imagenes\userinfo.png", (48, 48))
+        usrimg = PhotoImage(file=r"D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\imagenes\userinfo.png")
         imgusr=tk.Label(self.frame_user_info,image=usrimg)
         imgusr.pack(padx=30,pady=4)
         texto1=tk.Label(self.frame_user_info, text=self.name, font=('Times', 14))
@@ -122,31 +125,26 @@ class PAdmin(tk.Tk):
         self.tablausuarios.heading("Username", text="Usuario")
         self.tablausuarios.heading("Email", text="Email")
         self.tablausuarios.heading("Rol", text="Rol")
-        with open("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\db_users.json", "r", encoding='utf-8') as file:
-                db_users = json.load(file)
-                for usuarios in db_users["users"]:
-                    self.tablausuarios.insert("", "end", text=f'{usuarios["id"]}',values=(f'{usuarios["name"]}',f'{usuarios["username"]}',f'{usuarios["email"]}', f'{usuarios["role"]}'))
+        sql="select * from Usuarios"
+        db1 = db.Database()
+        db_users = db1.select(sql)
+        for usuarios in db_users:
+            self.tablausuarios.insert("", "end", text=f'{usuarios[0]}',values=(f'{usuarios[1]}',f'{usuarios[2]}',f'{usuarios[4]}', f'{usuarios[5]}'))
         self.tablausuarios.place(x=70, y=100)
 
-         
     def save_user(self):
         for index in self.listatipo.curselection():
-             tipo_user = self.listatipo.get(index)
-            
-        with open("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\db_users.json", "r", encoding='utf-8') as file:
-                db_users = json.load(file)
-                db_users["users"].append({
-                        'id': self.ccedula.get(),
-                        'name': self.cnombre.get(),
-                        'username': self.cusuario.get(),
-                        'password': self.cclave.get(),
-                        'email': self.ccorreo.get(),
-                        'role':tipo_user
-                    })
-                with open('D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\db_users.json', 'w') as jf: 
-                    json.dump(db_users, jf, indent=4, ensure_ascii=True)
-                    messagebox.showinfo('Info',"Usuario registrado con exito",parent=self)
-                    self.limpiar_panel(self.frame_dinamyc)
+            self.tipo_user = self.listatipo.get(index)
+
+        sql="insert into Usuarios(Id,NombreCompleto,Username,Clave,Correo,Rol) values(%s,'%s','%s','%s','%s','%s')" % (self.ccedula.get(),self.cnombre.get(),self.cusuario.get(),self.cclave.get(),self.ccorreo.get(),self.tipo_user)
+        print(sql)
+        db1 = db.Database()
+        db_users = db1.insert(sql)
+        if db_users:
+            messagebox.showinfo('Info',"Usuario registrado con exito :-)",parent=self)
+            self.limpiar_panel(self.frame_dinamyc)
+        else:
+            messagebox.showinfo('Error',"Ha habido un falla al intentar guardar el registro :-( ",parent=self)
 
     def limpiar_panel(self,panel):
     # Función para limpiar el contenido del panel
