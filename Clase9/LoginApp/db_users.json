@@ -1,19 +1,51 @@
 {
     "users": [
         {
-            "id": 12345678,
+            "id": "12345678",
             "name": "Ivan Narvaez",
             "username": "inarvaez",
             "password": "123",
-            "email": "ivan.narvaez@unitecnar.edu.co",
+            "email": "ivan.narvaez@gmail.com",
             "role": "Administrador"
         },
         {
-            "id": "1143338025",
-            "name": "Felix Lagares",
-            "username": "flagares",
+            "id": "1291289",
+            "name": "Sandra Lagares",
+            "username": "slagares",
+            "password": "12345678",
+            "email": "knarvaez@test.com",
+            "role": "Vendedor"
+        },
+        {
+            "id": "987456",
+            "name": "Dario Mejia2",
+            "username": "dmejia",
             "password": "123",
-            "email": "flagares@gmail.com",
+            "email": "dmejia@test.com",
+            "role": "Vendedor"
+        },
+        {
+            "id": "890811",
+            "name": "Johan Mejia",
+            "username": "jmejia",
+            "password": "12345678",
+            "email": "jmejia@gmail.com",
+            "role": "Vendedor"
+        },
+        {
+            "id": "85748",
+            "name": "Testing User",
+            "username": "test",
+            "password": "test",
+            "email": "test",
+            "role": "Administrador"
+        },
+        {
+            "id": "198291829",
+            "name": "Juan Castro",
+            "username": "jcastro",
+            "password": "123",
+            "email": "jcastro@gmail.com",
             "role": "Administrador"
         }
     ]

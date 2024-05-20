@@ -19,7 +19,7 @@ class FormularioMaestroDesign(tk.Tk):
     def config_window(self):
         # Configuración inicial de la ventana
         self.title('.: UNITECNAR - APP :.')
-        self.iconbitmap("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\FinalApp\imagenes\logo.ico")
+        #self.iconbitmap("D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase8\FinalApp\imagenes\logo.ico")
         w, h = 1024, 600        
         util_ventana.centrar_ventana(self, w, h)        
 

@@ -1,6 +1,7 @@
 import tkinter as tk
 import util.generic as utl
 from tkinter import messagebox
+from PIL import Image, ImageTk
 import json
 
 from formularios.PAdmin import PAdmin
@@ -14,7 +15,8 @@ class Login(tk.Tk):
         self.resizable(False, False)
         utl.centrar_ventana(self, 800, 500)
         self.logo = utl.leer_imagen(r"D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\imagenes\logo.png", (300, 100))
-        self.user = utl.leer_imagen(r"D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\imagenes\login.png", (48, 48))
+        self.user = utl.leer_imagen(r"D:\_EMPRESARIAL\_TECNAR\CLASES\PROGRAMACION\REPO\Clase9\LoginApp\imagenes\login.png", (64, 64))
+        
         # frame_logo
         self.frame_logo = tk.Frame(self, bd=0, width=300,relief=tk.SOLID)
         self.frame_logo.pack(side=tk.LEFT, expand=tk.YES, fill=tk.BOTH)
