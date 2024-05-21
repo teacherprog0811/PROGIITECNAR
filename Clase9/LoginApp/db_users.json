@@ -47,6 +47,14 @@
             "password": "123",
             "email": "jcastro@gmail.com",
             "role": "Administrador"
+        },
+        {
+            "id": "83646",
+            "name": "Cristian Sanguino 2",
+            "username": "csanguino",
+            "password": "123",
+            "email": "test@test.com",
+            "role": "Vendedor"
         }
     ]
 }
