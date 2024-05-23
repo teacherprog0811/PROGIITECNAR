@@ -55,6 +55,14 @@
             "password": "123",
             "email": "test@test.com",
             "role": "Vendedor"
+        },
+        {
+            "id": "83846",
+            "name": "Javier Luna",
+            "username": "jluna",
+            "password": "123",
+            "email": "jluna@unitecnar.edu.co",
+            "role": "Vendedor"
         }
     ]
 }

@@ -1,6 +1,5 @@
 import tkinter as tk
-import json
-from tkinter import messagebox, ttk, PhotoImage
+from tkinter import messagebox, ttk
 import util.generic as utl
 import util.db as db
 import webbrowser
