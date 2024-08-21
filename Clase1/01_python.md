@@ -41,7 +41,7 @@ Un tipo de datos booleano es un valor Verdadero o Falso. T y F siempre deben est
 
 Para verificar el tipo de datos de ciertos datos/variables utilizamos la función **tipo**. En la siguiente terminal verá diferentes tipos de datos de Python:
 
-![Checkeando tipos de datos](./images/checking_data_types.png)
+![Checkeando tipos de datos](../images/checking_data_types.png)
 
 ### Archivo de Python
 
