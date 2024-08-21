@@ -1,0 +1,1 @@
+Nombre: Ivan, Apellido: Narvaez, Edad: 34, Ciudad: ('Bogotá', 'Digite una opcion', 'Cartagena', 'Bogota', 'Cali'), Sexo: Masculino

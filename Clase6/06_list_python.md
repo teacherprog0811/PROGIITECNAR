@@ -1,4 +1,4 @@
-## Listas o Vectores
+## Colecciones en Python
 
 Hay cuatro tipos de datos de colección en Python :
 
