@@ -4,7 +4,7 @@
 
 |# Clase | Tema                                                    |
 |------|:---------------------------------------------------------:|
-| 01  |  [Introduccion](readme.md)|
+| 01  |  [Introduccion](./readme.md)|
 | 02  |  [Clase 1 Tipos de datos Python](./Clase1/01_python.md)|
 | 03  |  [Clase 1 Tipos de datos Java](./Clase1/01_java.md)|
 | 04  |  [Clase 2 Clases y Funciones Python](./Clase2/02_python.md)|
