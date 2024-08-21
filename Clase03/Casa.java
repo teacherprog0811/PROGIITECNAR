@@ -1,10 +1,5 @@
 
-package Clase3;
-
-/**
- *
- * @author Ing. Narvaez Mejia
- */
+package Clase03;
 public class Casa extends Lote {
     
     private String direccion;
@@ -13,8 +8,6 @@ public class Casa extends Lote {
     
         super(ancho,largo,propietario); 
         this.direccion = direccion;
-        
-       
     }
 
     /**

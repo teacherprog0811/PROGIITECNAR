@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs:/;/nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Clase3;
 
-/**
- *
- * @author Ing. Narvaez Mejia
- */
+package Clase03;
+
 public class Lote {
     
     private double ancho;
